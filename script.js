@@ -61,5 +61,5 @@ if (computerMove == "kamien" && playerMove == "papier") {
 } else if (computerMove == "kamien" && playerMove == "kamien") {
   printMessage("Remisujesz!");
 } else if (computerMove == "kamien" && playerMove > "nieznany ruch") {
-  printMessage("Wybrales nieznany ruch!");
+  printMessage("Wybrales nieznany ruch!!!!!!!!");
 }
