@@ -45,6 +45,11 @@ console.log("Gracz wpisal: " + playerInput);
 let argMove = getMoveName(playerInput);
 let argMove1 = getMoveName(randomNumber);
 
+function getMoveName(move) {
+  const result = argMove;
+  return result;
+}
+
 function getMoveName(argMove) {
   if (argMove == 1) {
     return "kamien";
@@ -56,7 +61,6 @@ function getMoveName(argMove) {
     return "Nieznany ruch!";
   }
 }
-
 function displayResult(argMove) {
   printMessage("Zagrałem " + argMove1 + ", a Ty " + argMove);
   if (argMove == "papier" && argMove1 == "kamien") {
