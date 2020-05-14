@@ -83,3 +83,6 @@ function displayResult(argMove) {
     printMessage("Wybrales nieznany ruch!");
   }
 }
+displayResult("kamien");
+displayResult("nozyce");
+displayResult("papier");
