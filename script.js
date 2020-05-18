@@ -1,6 +1,5 @@
-function playGame() {
-  let playerInput = (kamien, papier, nozyce);
-  /*clearMessages();*/
+function playGame(playerInput) {
+  clearMessages();
   function printMessage(msg) {
     let div = document.createElement("div");
     div.innerHTML = msg;
@@ -11,7 +10,6 @@ function playGame() {
   }
   let randomNumber = Math.floor(Math.random() * 3 + 1);
   let computerMove = getMoveName(randomNumber);
-  /*let playerInput = prompt("Wybierz swoj ruch! 1: kamien, 2: papier, 3: nozyce.");*/
   let playerMove = getMoveName(playerInput);
   function getMoveName(move) {
     if (move == 1) {
@@ -46,13 +44,12 @@ function playGame() {
   }
   displayResult(computerMove, playerMove);
 }
-
 document.getElementById("play-rock").addEventListener("click", function () {
-  printMessage("Wybrales kamen!");
+  playGame(1);
 });
 document.getElementById("play-paper").addEventListener("click", function () {
-  printMessage("Wybrales papier!");
+  playGame(2);
 });
 document.getElementById("play-scissors").addEventListener("click", function () {
-  playGame("Wybrales nozyce!");
+  playGame(3);
 });
